@@ -11,21 +11,23 @@
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
-  <nav class="white" role="navigation">
-    <div class="nav-wrapper container">
-      <a id="logo-container" href="#" class="brand-logo">QCut</a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="#">快剪</a></li>
-        <li><a href="#">服务</a></li>
-      </ul>
+  <div class="navbar-fixed">
+    <nav class="white" role="navigation" id="header">
+      <div class="nav-wrapper container">
+        <a id="logo-container" href="#" class="brand-logo">QCut</a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="javascript:$('html,body').animate({scrollTop: 0}, 900);">快剪</a></li>
+          <li><a href="javascript:$('html,body').animate({scrollTop: $('#service').offset().top - 70}, 900);">服务</a></li>
+        </ul>
 
-      <ul id="nav-mobile" class="side-nav">
-        <li><a href="#">快剪</a></li>
-        <li><a href="#">服务</a></li>
-      </ul>
-      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-    </div>
-  </nav>
+        <ul id="nav-mobile" class="side-nav">
+          <li><a href="javascript:$('html,body').animate({scrollTop: 0}, 900);">快剪</a></li>
+          <li><a href="javascript:$('html,body').animate({scrollTop: $('#service').offset().top - 70}, 900);">服务</a></li>
+        </ul>
+        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+      </div>
+    </nav>
+  </div>
 
   <div id="index-banner" class="parallax-container">
     <div class="section no-pad-bot">
@@ -58,7 +60,7 @@
 
             <p class="light center-align">360无死角发屑净化器、剪具<br />
             紫外线灭菌消毒、天然环保亲肤材质 <br /><br />
-            E1级标准环保颗粒饭 <br /> 新一代聚碳酸醋 <br /> 弱磁耐酸金属 | 5MM浮法眼睛
+            E1级标准环保颗粒饭 <br /> 弱磁耐酸金属 | 5MM浮法眼睛
             </p>
           </div>
         </div>
@@ -105,7 +107,7 @@
   <div class="container">
     <div class="section">
 
-      <div class="row">
+      <div class="row" id="service">
         <div class="col s12 center">
           <h3><i class="mdi-content-send brown-text"></i></h3>
           <h4>服务</h4>
