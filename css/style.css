@@ -14,6 +14,9 @@ nav .brand-logo {
 p {
   line-height: 2rem;
 }
+.container.spa{
+  min-height: 69vh;
+}
 
 .button-collapse {
   color: #26a69a;
